@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TAU RESORT — Меню</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500&display=swap');
+
+  :root{
+    --cream:#f3efe6;
+    --paper:#faf8f2;
+    --ink:#2b2b26;
+    --muted:#7a7568;
+    --line:#d9d2c2;
+    --pine:#3c4a3a;
+    --pine-dark:#253023;
+    --gold:#a9884f;
+  }
+
+  *{box-sizing:border-box; margin:0; padding:0;}
+
+  body{
+    background:var(--cream);
+    color:var(--ink);
+    font-family:'Inter', sans-serif;
+    line-height:1.6;
+    padding-bottom:4rem;
+  }
+
+  header{
+    padding:3.5rem 1.5rem 2.5rem;
+    text-align:center;
+    background:linear-gradient(180deg, var(--pine-dark), var(--pine));
+    color:var(--cream);
+    position:relative;
+  }
+
+  header .mark{
+    font-family:'Cormorant Garamond', serif;
+    font-size:2.6rem;
+    letter-spacing:0.28em;
+    font-weight:600;
+  }
+
+  header .sub{
+    margin-top:0.6rem;
+    font-size:0.82rem;
+    letter-spacing:0.18em;
+    color:#cfd6ca;
+    text-transform:uppercase;
+  }
+
+  header .peak{
+    width:56px;
+    height:56px;
+    margin:0 auto 1rem;
+  }
+
+  main{
+    max-width:640px;
+    margin:0 auto;
+    padding:0 1.25rem;
+  }
+
+  nav{
+    display:flex;
+    flex-wrap:wrap;
+    gap:0.5rem;
+    justify-content:center;
+    padding:1.75rem 0;
+    position:sticky;
+    top:0;
+    background:var(--cream);
+    z-index:5;
+  }
+
+  nav a{
+    font-size:0.78rem;
+    letter-spacing:0.04em;
+    color:var(--muted);
+    text-decoration:none;
+    padding:0.4rem 0.7rem;
+    border:0.5px solid var(--line);
+    border-radius:999px;
+    white-space:nowrap;
+  }
+
+  section{
+    padding:2.4rem 0 1rem;
+    border-top:0.5px solid var(--line);
+  }
+
+  section:first-of-type{border-top:none;}
+
+  h2{
+    font-family:'Cormorant Garamond', serif;
+    font-size:1.7rem;
+    font-weight:600;
+    color:var(--pine-dark);
+    margin-bottom:1.4rem;
+  }
+
+  .item{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    gap:1rem;
+    padding:0.85rem 0;
+    border-bottom:0.5px dotted var(--line);
+  }
+
+  .item:last-child{border-bottom:none;}
+
+  .item-name{
+    font-size:1.02rem;
+    font-weight:500;
+  }
+
+  .item-desc{
+    font-family:'Cormorant Garamond', serif;
+    font-style:italic;
+    font-size:0.92rem;
+    color:var(--muted);
+    margin-top:0.15rem;
+  }
+
+  .item-price{
+    font-weight:500;
+    color:var(--pine-dark);
+    white-space:nowrap;
+    font-variant-numeric:tabular-nums;
+  }
+
+  footer{
+    text-align:center;
+    padding:2.5rem 1rem 0;
+    color:var(--muted);
+    font-size:0.78rem;
+    letter-spacing:0.12em;
+  }
+
+  @media (max-width:420px){
+    header .mark{font-size:2.1rem;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <svg class="peak" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M10 46 L26 20 L34 32 L42 16 L54 46 Z" stroke="#f3efe6" stroke-width="2.2" stroke-linejoin="round" fill="none"/>
+  </svg>
+  <div class="mark">TAU RESORT</div>
+  <div class="sub">Меню</div>
+</header>
+
+<main>
+  <nav>
+    <a href="#zakuski">Закуски</a>
+    <a href="#salaty">Салаты</a>
+    <a href="#gor-zakuski">Горячие закуски</a>
+    <a href="#supy">Супы</a>
+    <a href="#osnovnye">Основные</a>
+    <a href="#gril">Гриль</a>
+    <a href="#garniry">Гарниры</a>
+    <a href="#deserty">Десерты</a>
+    <a href="#napitki">Напитки</a>
+  </nav>
+
+  <section id="zakuski">
+    <h2>1. Холодные закуски</h2>
+    <div class="item"><div><div class="item-name">Ассорти свежих овощей</div><div class="item-desc">Помидоры, огурцы, болгарский перец, зелень</div></div><div class="item-price">2 500 ₸</div></div>
+    <div class="item"><div><div class="item-name">Мясное ассорти</div><div class="item-desc">Ростбиф, буженина, куриное филе, зелень</div></div><div class="item-price">5 500 ₸</div></div>
+    <div class="item"><div><div class="item-name">Казы с луком</div><div class="item-desc">Традиционная подача казы с маринованным луком</div></div><div class="item-price">4 500 ₸</div></div>
+    <div class="item"><div><div class="item-name">Карпаччо из говядины</div><div class="item-desc">Тонко нарезанная говядина, руккола, пармезан</div></div><div class="item-price">5 900 ₸</div></div>
+    <div class="item"><div><div class="item-name">Сырное ассорти</div><div class="item-desc">Ассорти сыров, виноград, орехи, мёд</div></div><div class="item-price">6 000 ₸</div></div>
+    <div class="item"><div><div class="item-name">Хумус с домашней лепёшкой</div><div class="item-desc">Нежный хумус, оливковое масло, кунжут</div></div><div class="item-price">3 200 ₸</div></div>
+  </section>
+
+  <section id="salaty">
+    <h2>2. Салаты</h2>
+    <div class="item"><div><div class="item-name">Салат «Цезарь» с курицей</div><div class="item-desc">Куриное филе, айсберг, сухарики, пармезан, соус «Цезарь»</div></div><div class="item-price">3 500 ₸</div></div>
+    <div class="item"><div><div class="item-name">Салат «Цезарь» с креветками</div><div class="item-desc">Креветки, айсберг, пармезан, сухарики, соус «Цезарь»</div></div><div class="item-price">4 500 ₸</div></div>
+    <div class="item"><div><div class="item-name">Салат «Греческий»</div><div class="item-desc">Помидоры, огурцы, болгарский перец, маслины, сыр фета</div></div><div class="item-price">3 500 ₸</div></div>
+    <div class="item"><div><div class="item-name">Салат «Нисуаз»</div><div class="item-desc">Тунец, картофель, стручковая фасоль, яйцо, томаты</div></div><div class="item-price">4 200 ₸</div></div>
+    <div class="item"><div><div class="item-name">Тёплый салат с говядиной</div><div class="item-desc">Обжаренная говядина, свежие овощи, фирменная заправка</div></div><div class="item-price">4 500 ₸</div></div>
+    <div class="item"><div><div class="item-name">Салат с креветками и авокадо</div><div class="item-desc">Креветки, авокадо, микс салатов, томаты черри</div></div><div class="item-price">5 200 ₸</div></div>
+    <div class="item"><div><div class="item-name">Салат с хрустящими баклажанами</div><div class="item-desc">Баклажаны, томаты, зелень, сыр, фирменный соус</div></div><div class="item-price">3 900 ₸</div></div>
+  </section>
+
+  <section id="gor-zakuski">
+    <h2>3. Горячие закуски</h2>
+    <div class="item"><div><div class="item-name">Хрустящие креветки</div><div class="item-desc">В хрустящей панировке с фирменным соусом</div></div><div class="item-price">5 500 ₸</div></div>
+    <div class="item"><div><div class="item-name">Жареный сыр</div><div class="item-desc">В хрустящей корочке с ягодным соусом</div></div><div class="item-price">4 000 ₸</div></div>
+    <div class="item"><div><div class="item-name">Грибное ассорти</div><div class="item-desc">Шампиньоны и вешенки с зеленью и специями</div></div><div class="item-price">3 500 ₸</div></div>
+    <div class="item"><div><div class="item-name">Запечённые овощи с сыром</div><div class="item-desc">Сезонные овощи, сыр, ароматные травы</div></div><div class="item-price">3 500 ₸</div></div>
+  </section>
+
+  <section id="supy">
+    <h2>4. Супы</h2>
+    <div class="item"><div><div class="item-name">Крем-суп из шампиньонов</div><div class="item-desc">Шампиньоны, сливки, картофель, зелень</div></div><div class="item-price">2 800 ₸</div></div>
+    <div class="item"><div><div class="item-name">Крем-суп из брокколи</div><div class="item-desc">Брокколи, сливки, сыр, зелень</div></div><div class="item-price">2 600 ₸</div></div>
+    <div class="item"><div><div class="item-name">Солянка мясная</div><div class="item-desc">Ассорти мясных продуктов, овощи, маслины, лимон</div></div><div class="item-price">3 000 ₸</div></div>
+    <div class="item"><div><div class="item-name">Куриный суп с домашней лапшой</div><div class="item-desc">Куриное филе, домашняя лапша, овощи, зелень</div></div><div class="item-price">2 400 ₸</div></div>
+  </section>
+
+  <section id="osnovnye">
+    <h2>5. Основные блюда</h2>
+    <div class="item"><div><div class="item-name">Медальоны из говяжьей вырезки</div><div class="item-desc">Соус демиглас, брокколи, цветная капуста, спаржа, тимьян</div></div><div class="item-price">6 500 ₸</div></div>
+    <div class="item"><div><div class="item-name">Стейк из говядины</div><div class="item-desc">На гриле, овощи, фирменный соус</div></div><div class="item-price">7 500 ₸</div></div>
+    <div class="item"><div><div class="item-name">Бефстроганов</div><div class="item-desc">Сливочный соус, шампиньоны, картофельное пюре</div></div><div class="item-price">4 900 ₸</div></div>
+    <div class="item"><div><div class="item-name">Филе курицы на гриле</div><div class="item-desc">Овощи гриль, сливочный соус</div></div><div class="item-price">4 200 ₸</div></div>
+    <div class="item"><div><div class="item-name">Куриное филе с брокколи</div><div class="item-desc">Брокколи, киноа, сливочный соус</div></div><div class="item-price">4 500 ₸</div></div>
+    <div class="item"><div><div class="item-name">Филе лосося</div><div class="item-desc">Запечённый лосось, овощи, лимонный соус</div></div><div class="item-price">6 500 ₸</div></div>
+    <div class="item"><div><div class="item-name">Форель на гриле</div><div class="item-desc">Овощи гриль, лимон, зелень</div></div><div class="item-price">6 200 ₸</div></div>
+  </section>
+
+  <section id="gril">
+    <h2>6. Блюда на гриле</h2>
+    <div class="item"><div><div class="item-name">Шашлык из говядины</div><div class="item-desc">Говядина, лук, зелень, соус</div></div><div class="item-price">4 800 ₸</div></div>
+    <div class="item"><div><div class="item-name">Шашлык из курицы</div><div class="item-desc">Куриное филе, овощи, лук, фирменный соус</div></div><div class="item-price">3 800 ₸</div></div>
+    <div class="item"><div><div class="item-name">Овощи гриль</div><div class="item-desc">Баклажан, кабачок, болгарский перец, томаты</div></div><div class="item-price">2 500 ₸</div></div>
+  </section>
+
+  <section id="garniry">
+    <h2>7. Гарниры</h2>
+    <div class="item"><div class="item-name">Картофельное пюре</div><div class="item-price">1 500 ₸</div></div>
+    <div class="item"><div class="item-name">Картофель по-деревенски</div><div class="item-price">1 700 ₸</div></div>
+    <div class="item"><div class="item-name">Картофель фри</div><div class="item-price">1 500 ₸</div></div>
+    <div class="item"><div class="item-name">Овощи гриль</div><div class="item-price">2 000 ₸</div></div>
+    <div class="item"><div class="item-name">Брокколи</div><div class="item-price">1 800 ₸</div></div>
+    <div class="item"><div class="item-name">Цветная капуста</div><div class="item-price">1 800 ₸</div></div>
+    <div class="item"><div class="item-name">Спаржа</div><div class="item-price">2 500 ₸</div></div>
+    <div class="item"><div class="item-name">Рис с зеленью</div><div class="item-price">1 400 ₸</div></div>
+  </section>
+
+  <section id="deserty">
+    <h2>8. Десерты</h2>
+    <div class="item"><div class="item-name">Чизкейк</div><div class="item-price">2 800 ₸</div></div>
+    <div class="item"><div class="item-name">Шоколадный фондан</div><div class="item-price">3 000 ₸</div></div>
+    <div class="item"><div class="item-name">Тирамису</div><div class="item-price">2 800 ₸</div></div>
+    <div class="item"><div class="item-name">Панна-котта</div><div class="item-price">2 600 ₸</div></div>
+    <div class="item"><div class="item-name">Фруктовое ассорти</div><div class="item-price">3 000 ₸</div></div>
+    <div class="item"><div class="item-name">Мороженое с ягодным соусом</div><div class="item-price">2 200 ₸</div></div>
+  </section>
+
+  <section id="napitki">
+    <h2>9. Горячие напитки</h2>
+    <div class="item"><div class="item-name">Чай чёрный</div><div class="item-price">1 200 ₸</div></div>
+    <div class="item"><div class="item-name">Чай зелёный</div><div class="item-price">1 200 ₸</div></div>
+    <div class="item"><div class="item-name">Чай с лимоном и мёдом</div><div class="item-price">1 500 ₸</div></div>
+    <div class="item"><div class="item-name">Капучино</div><div class="item-price">1 600 ₸</div></div>
+    <div class="item"><div class="item-name">Латте</div><div class="item-price">1 700 ₸</div></div>
+    <div class="item"><div class="item-name">Эспрессо</div><div class="item-price">1 300 ₸</div></div>
+    <div class="item"><div class="item-name">Американо</div><div class="item-price">1 300 ₸</div></div>
+  </section>
+
+  <section id="holodnye">
+    <h2>10. Холодные напитки</h2>
+    <div class="item"><div class="item-name">Домашний лимонад 0,5 л</div><div class="item-price">2 000 ₸</div></div>
+    <div class="item"><div class="item-name">Морс ягодный 0,5 л</div><div class="item-price">1 700 ₸</div></div>
+    <div class="item"><div class="item-name">Минеральная вода 0,5 л</div><div class="item-price">1 000 ₸</div></div>
+    <div class="item"><div class="item-name">Апельсиновый сок 0,25 л</div><div class="item-price">1 500 ₸</div></div>
+    <div class="item"><div class="item-name">Яблочный сок 0,25 л</div><div class="item-price">1 500 ₸</div></div>
+  </section>
+
+  <footer>TAU RESORT — ДӘМНІҢ ЖАҢА БИІГІ</footer>
+</main>
+
+</body>
+</html>
